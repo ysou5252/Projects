@@ -26,3 +26,4 @@ for x in range(1,11):
         index += 1
 
 wb.save("sample.xlsx")
+wb
