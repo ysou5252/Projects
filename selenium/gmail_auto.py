@@ -27,7 +27,9 @@ time.sleep(2)
 driver.find_element_by_css_selector('.T-I.T-I-KE.L3').click()
 time.sleep(1)
 
-action.send_keys('id').key_down(Keys.TAB).key_down(Keys.TAB).send_keys('제목').key_down(Keys.TAB).send_keys('내용입니다').perform()
+send_button = driver.find_element_by_css_selector('gU.Up')
+
+action.send_keys('id').key_down(Keys.TAB).key_down(Keys.TAB).send_keys('제목').key_down(Keys.TAB).send_keys('내용입니다').move_to_element(send_button).perform()
 
 
 
